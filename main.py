@@ -20,7 +20,7 @@ def convert_currency(message):
         currency = words[1]
         amount = words[2]
 
-        if not amount.is_numeric():
+        if not amount.isnumeric():
             bot.reply_to(message, f'Сумма должна быть в числах, а у тебя: {amount}')
         else:
             bot.reply_to(
